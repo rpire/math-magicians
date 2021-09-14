@@ -4,16 +4,16 @@ import './index.css';
 import Calculator from './components/calculator';
 import reportWebVitals from './reportWebVitals';
 
-class CalculatorApp extends React.Component {
+class CalculatorApp extends React.PureComponent {
   render() {
     return (
-      <div className='container'>
+      <div className="container">
         <h1>The Calculator Web App</h1>
         <Calculator />
       </div>
     );
-  };
-};
+  }
+}
 
 ReactDOM.render(
   <React.StrictMode>

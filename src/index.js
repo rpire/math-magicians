@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Calculator from './components/calculator';
 import reportWebVitals from './reportWebVitals';
+
+class CalculatorApp extends React.Component {
+  render() {
+    return (
+      <div className='container'>
+        <h1>The Calculator Web App</h1>
+        <Calculator />
+      </div>
+    );
+  };
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CalculatorApp />
   </React.StrictMode>,
   document.getElementById('root'),
 );

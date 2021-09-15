@@ -12,19 +12,17 @@ class Calculator extends React.Component {
     this.clickHandle = this.clickHandle.bind(this);
   }
 
-  clickHandle = (event) => {
-    this.setState((prevState) => {
-      return (calculate(prevState, event.target.innerHTML));
-    });
-  }
+  clickHandle = (event) => this.setState((prevState) => calculate(prevState, event.target.innerHTML));
 
   render() {
+    const {total, next, operation} = this.state
+
     return (
       <div className="calculator">
         <div id="entry" className="calc" name="entry" placeholder="0">
-          <span>{this.state.total}</span>
-          <span>{this.state.operation}</span>
-          <span>{this.state.next}</span>
+          <span>{total}</span>
+          <span>{operation}</span>
+          <span>{next}</span>
         </div>
         <button type="button" className="calc btn" onClick={this.clickHandle}>AC</button>
         <button type="button" className="calc btn" onClick={this.clickHandle}>+/-</button>

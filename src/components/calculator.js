@@ -12,10 +12,12 @@ class Calculator extends React.Component {
     this.clickHandle = this.clickHandle.bind(this);
   }
 
-  clickHandle = (event) => this.setState((prevState) => calculate(prevState, event.target.innerHTML));
+  clickHandle = (event) => this.setState((prevState) => {
+    calculate(prevState, event.target.innerHTML);
+  });
 
   render() {
-    const {total, next, operation} = this.state
+    const { total, next, operation } = this.state;
 
     return (
       <div className="calculator">

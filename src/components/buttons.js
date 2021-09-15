@@ -8,9 +8,9 @@ class Buttons extends React.Component {
   }
 
   clickHandle = (event) => {
-    const {onButtonPress} = this.props
+    const { onButtonPress } = this.props;
     return onButtonPress(event);
-  } 
+  }
 
   render() {
     const symbols = [
@@ -23,7 +23,8 @@ class Buttons extends React.Component {
     const buttons = symbols.map((symbol) => {
       if (/[÷×+\-=]/.test(symbol) && symbol !== '+/-') {
         return (<button key={symbol} type="button" className="calc btn orange" onClick={this.clickHandle}>{symbol}</button>);
-      } else if (symbol === '0') {
+      }
+      if (symbol === '0') {
         return (<button key={symbol} type="button" id="zero" className="calc btn" onClick={this.clickHandle}>0</button>);
       }
       return (<button key={symbol} type="button" className="calc btn" onClick={this.clickHandle}>{symbol}</button>);

@@ -40,6 +40,10 @@ h1 {
   background-color: #c5c5c5;
 }
 
+.btn:active {
+  background-color: #858693;
+}
+
 .orange {
   background-color: #f5913e;
   border-color: #c5c5c5;
@@ -48,6 +52,10 @@ h1 {
 
 .orange:hover {
   background-color: #da7e23;
+}
+
+.orange:active {
+  background-color: #8a5219;
 }
 
 #entry {

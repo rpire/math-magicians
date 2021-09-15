@@ -12,16 +12,26 @@ class App extends React.Component {
     };
     this.changeHandle = this.changeHandle.bind(this);
   }
-  changeHandle = (event) =>
-    this.setState((prevState) => calculate(prevState, event.target.innerHTML));
-    
+  
+  changeHandle = (event) => {
+    return this.setState((prevState) => calculate(prevState, event.target.innerHTML));
+  }
+
   render() {
+    const {total, next, operation} = this.state;
+    const obj = {
+      total,
+      next,
+      operation,
+    };
+
     return (
       <div className="container">
         <h1>The Calculator Web App</h1>
         <Calculator
-         data={this.state}
-         onDataChange={this.changeHandle}/>
+          data={obj}
+          onDataChange={this.changeHandle}
+        />
       </div>
     );
   }

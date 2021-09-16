@@ -59,7 +59,7 @@ h1 {
 }
 
 #entry {
-  justify-content: end;
+  justify-content: flex-end;
   grid-column: 1/5;
   background-color: #858693;
   text-align: right;

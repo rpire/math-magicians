@@ -7,6 +7,9 @@
 - JavaScript
 - React
 
+## Live Demo
+
+[Live Demo Link](https://rpire.github.io/math-magicians/index.html)
 
 ## Getting Started
 

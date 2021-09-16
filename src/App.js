@@ -10,7 +10,7 @@ function App() {
   });
   const changeHandle = (event) => {
     setData(calculate(data, event.target.innerHTML));
-  }
+  };
   return (
     <div className="container">
       <h1>The Calculator Web App</h1>

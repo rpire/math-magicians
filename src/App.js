@@ -15,7 +15,7 @@ class App extends React.Component {
 
   changeHandle = (event) => {
     this.setState((prevState) => calculate(prevState, event.target.innerHTML));
-  } 
+  }
 
   render() {
     const { total, next, operation } = this.state;

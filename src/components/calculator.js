@@ -2,10 +2,10 @@ import React from 'react';
 import propTypes from 'prop-types';
 import Buttons from './buttons';
 
-
 class Calculator extends React.PureComponent {
   render() {
-    const { total, operation, next } = this.props.data;
+    const { data } = this.props;
+    const { total, operation, next } = data;
     const { onDataChange } = this.props;
     return (
       <div className="calculator">

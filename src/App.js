@@ -13,9 +13,9 @@ class App extends React.Component {
     this.changeHandle = this.changeHandle.bind(this);
   }
 
-  changeHandle = (event) => this.setState((prevState) => {
-    return calculate(prevState, event.target.innerHTML);
-  })
+  changeHandle = (event) => {
+    this.setState((prevState) => calculate(prevState, event.target.innerHTML));
+  } 
 
   render() {
     const { total, next, operation } = this.state;

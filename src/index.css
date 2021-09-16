@@ -32,11 +32,16 @@ h1 {
 .btn {
   justify-content: center;
   background-color: #e0e0e0;
+  font-size: 18px;
   border: 1px solid #858693;
 }
 
 .btn:hover {
   background-color: #c5c5c5;
+}
+
+.btn:active {
+  background-color: #858693;
 }
 
 .orange {
@@ -47,6 +52,10 @@ h1 {
 
 .orange:hover {
   background-color: #da7e23;
+}
+
+.orange:active {
+  background-color: #8a5219;
 }
 
 #entry {

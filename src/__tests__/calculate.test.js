@@ -1,4 +1,4 @@
-import calculate from "../logic/calculate";
+import calculate from '../logic/calculate';
 
 describe('calculate logic tests', () => {
   const obj = {
@@ -11,13 +11,13 @@ describe('calculate logic tests', () => {
     total: '3',
     next: '2',
     operation: '-',
-  }
+  };
 
   const multiplyObj = {
     total: '3',
     next: null,
     operation: '-',
-  }
+  };
 
   test('3 + 2 = 5', () => {
     expect(calculate(obj, '=')).toEqual({

@@ -9,7 +9,7 @@ class Footer extends React.PureComponent {
         </p>
       </footer>
     );
-  };
-};
+  }
+}
 
 export default Footer;

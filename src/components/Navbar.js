@@ -7,7 +7,7 @@ class Navbar extends React.PureComponent {
       {
         id: 1,
         path: '/',
-        text: 'Home'
+        text: 'Home',
       },
       {
         id: 2,
@@ -26,16 +26,16 @@ class Navbar extends React.PureComponent {
         <h1>Math Magicians</h1>
         <ul>
           {links.map((link) => (
-          <li key={link.id}>
-            <NavLink to={link.path} activeClassName="active-page" exact>
-              {link.text}
-            </NavLink>
-          </li>
+            <li key={link.id}>
+              <NavLink to={link.path} activeClassName="active-page" exact>
+                {link.text}
+              </NavLink>
+            </li>
           ))}
         </ul>
       </nav>
     );
-  };
-};
+  }
+}
 
 export default Navbar;

@@ -8,7 +8,7 @@ class Calculator extends React.PureComponent {
     const { total, operation, next } = data;
     return (
       <div className="calculator-container">
-        <h2>Let's do some math!</h2>
+        <h2>Let&apos;s do some math!</h2>
         <div className="calculator">
           <div id="entry" className="calc" name="entry" placeholder="0">
             <span>{total}</span>
@@ -18,7 +18,6 @@ class Calculator extends React.PureComponent {
           <Buttons onButtonPress={onDataChange} />
         </div>
       </div>
-      
     );
   }
 }

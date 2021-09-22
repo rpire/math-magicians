@@ -12,7 +12,7 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 90%
+  width: 90%;
 }
 
 h1,
@@ -66,7 +66,7 @@ a:hover {
 }
 
 p {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .container {
@@ -97,7 +97,7 @@ p {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  Height: 25vh;
+  height: 25vh;
 }
 
 .quote {
@@ -108,7 +108,7 @@ p {
 .calc {
   display: flex;
   align-items: center;
-  height: 70px;
+  height: 65px;
 }
 
 .btn {
@@ -132,12 +132,12 @@ p {
   border-top-color: #858693;
 }
 
-.orange:hover {
-  background-color: #da7e23;
+.green:hover {
+  background-color: #9aba35;
 }
 
-.orange:active {
-  background-color: #8a5219;
+.green:active {
+  background-color: #7a9a15;
 }
 
 #entry {
@@ -171,6 +171,7 @@ footer {
 
 .footer-text {
   font-size: 16px;
+  margin: 10px
 }
 
 @media only screen and (min-width: 769px) {
@@ -202,6 +203,7 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+
   .calculator {
     width: 55%;
     margin: 0;

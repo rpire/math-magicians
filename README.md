@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rpire.github.io/math-magicians/index.html)
+[Live Demo Link](https://rpire.github.io/math-magicians/)
 
 ## Getting Started
 

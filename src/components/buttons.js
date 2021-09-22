@@ -22,7 +22,7 @@ class Buttons extends React.Component {
     ];
     const buttons = symbols.map((symbol) => {
       if (/[÷×+\-=]/.test(symbol) && symbol !== '+/-') {
-        return (<button key={symbol} type="button" className="calc btn orange" onClick={this.clickHandle}>{symbol}</button>);
+        return (<button key={symbol} type="button" className="calc btn green" onClick={this.clickHandle}>{symbol}</button>);
       }
       if (symbol === '0') {
         return (<button key={symbol} type="button" id="zero" className="calc btn" onClick={this.clickHandle}>0</button>);

@@ -2,9 +2,12 @@ import React from 'react';
 
 const Quote = () => {
   return (
-    <div>
-      <p>
-        Hello from the quote page, this is the quote page. Welcome!
+    <div className="quote-container">
+      <p className="quote">
+      “What music is to the heart, mathematics is to the mind.”
+      </p>
+      <p className="quote">
+        - Amit Kalintri, Wealth of Words
       </p>
     </div>
   );

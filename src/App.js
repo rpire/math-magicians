@@ -6,6 +6,7 @@ import calculate from './logic/calculate';
 import Calculator from './components/calculator';
 import Quote from './pages/Quote';
 import NotFound from './pages/NotFound';
+import Footer from './components/Footer';
 
 const App = () => {
   const [data, setData] = useState({
@@ -34,8 +35,9 @@ const App = () => {
         </Route>
         <Route path="*">
           <NotFound />
-        </Route> 
-      </Switch>  
+        </Route>
+      </Switch>
+      <Footer />
     </div>
   );
 }

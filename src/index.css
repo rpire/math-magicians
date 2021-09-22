@@ -1,12 +1,72 @@
 body {
-  background-color: #333;
+  background: linear-gradient(0deg, #333, #1a1a1a), #252525;
   font-family: monospace;
+  color: #fff;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%
+}
+
+h1,
+h2 {
+  text-align: center;
 }
 
 h1 {
   text-align: center;
-  font-size: 55px;
+  font-size: 32px;
+  text-decoration: underline;
+  margin: 25px 0;
+}
+
+h2 {
+  text-align: left;
+  font-size: 18px;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 16px;
+}
+
+ul > li:nth-child(2) {
+  padding: 0 10px;
+  margin: 0 10px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+a {
   color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.active-page {
+  color: #bada55;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 13px;
 }
 
 .container {
@@ -15,13 +75,34 @@ h1 {
   align-items: center;
 }
 
+.home,
+.calculator-container,
+.quote-container,
+.not-found {
+  width: 90%;
+  padding-bottom: 10vh;
+  margin-top: 10vh;
+}
+
 .calculator {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   font-size: 18px;
-  width: 90%;
   max-width: 800px;
-  margin-top: 10vh;
+  margin-top: 50px;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  Height: 25vh;
+}
+
+.quote {
+  text-align: center;
+  font-size: 18px;
 }
 
 .calc {
@@ -45,8 +126,8 @@ h1 {
   background-color: #858693;
 }
 
-.orange {
-  background-color: #f5913e;
+.green {
+  background-color: #bada55;
   border-color: #c5c5c5;
   border-top-color: #858693;
 }
@@ -76,4 +157,53 @@ h1 {
 
 #zero {
   grid-column: 1/3;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(180deg, #bada55, #7a9a15);
+  color: #000;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    background: linear-gradient(0deg, #333, #222), #252525;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  li {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .calculator-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .calculator {
+    width: 55%;
+    margin: 0;
+  }
 }

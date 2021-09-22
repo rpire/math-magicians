@@ -7,7 +7,7 @@ const Home = () => (
       Hello there, math magician! This is the Math Magicians web app. The web app is simple. It
       has three pages, this is the
       <strong> Home </strong>
-        page where you can see some information about the web app and how it works.
+      page where you can see some information about the web app and how it works.
     </p>
     <p>
       The next page you will find is the
@@ -20,7 +20,7 @@ const Home = () => (
     <p>
       The last page you will find is this site is the
       <strong> Quote </strong>
-        page. Where you will find a quote from a famous math magician.
+      page. Where you will find a quote from a famous math magician.
     </p>
     <p>
       I hope you enjoy this website. Lets explore the other pages, click on the links above!

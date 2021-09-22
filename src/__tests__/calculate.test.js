@@ -7,6 +7,18 @@ describe('calculate logic tests', () => {
     operation: '+',
   };
 
+  const subtractObj = {
+    total: '3',
+    next: '2',
+    operation: '-',
+  }
+
+  const multiplyObj = {
+    total: '3',
+    next: null,
+    operation: '-',
+  }
+
   test('3 + 2 = 5', () => {
     expect(calculate(obj, '=')).toEqual({
       total: '5',
@@ -20,6 +32,22 @@ describe('calculate logic tests', () => {
       total: '0',
       next: null,
       operation: null,
+    });
+  });
+
+  test('3 - 2 = 1', () => {
+    expect(calculate(subtractObj, '=')).toEqual({
+      total: '1',
+      next: null,
+      operation: null,
+    });
+  });
+
+  test('update operator', () => {
+    expect(calculate(multiplyObj, '+')).toEqual({
+      total: '3',
+      next: null,
+      operation: '+',
     });
   });
 });

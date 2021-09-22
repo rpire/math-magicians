@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
 import calculate from './logic/calculate';
 import Calculator from './components/calculator';
+import Quote from './pages/Quote';
+import NotFound from './pages/NotFound';
 
-function App() {
+const App = () => {
   const [data, setData] = useState({
     total: '0',
     next: null,
@@ -13,11 +18,24 @@ function App() {
   };
   return (
     <div className="container">
-      <h1>The Calculator Web App</h1>
-      <Calculator
-        data={data}
-        onDataChange={changeHandle}
-      />
+      <Navbar />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/calculator">
+          <Calculator
+            data={data}
+            onDataChange={changeHandle}
+          />
+        </Route>
+        <Route path="/quote">
+          <Quote />
+        </Route>
+        <Route path="*">
+          <NotFound />
+        </Route> 
+      </Switch>  
     </div>
   );
 }

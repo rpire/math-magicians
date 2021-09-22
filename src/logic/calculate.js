@@ -14,7 +14,7 @@ function isNumber(item) {
  *   operation:String  +, -, etc.
  */
 export default function calculate(obj, buttonName) {
-  if (buttonName === 'AC' || obj.total === 'Can\'t divide by 0.') {
+  if (buttonName === 'AC' || obj.total === "Can't divide by 0.") {
     return {
       total: '0',
       next: null,

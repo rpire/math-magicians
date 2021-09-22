@@ -1,4 +1,5 @@
 body {
+  position: relative;
   background: linear-gradient(0deg, #333, #1a1a1a), #252525;
   font-family: monospace;
   color: #fff;
@@ -160,10 +161,10 @@ p {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
   position: absolute;
   bottom: 0;
+  display: flex;
+  justify-content: center;
   background: linear-gradient(180deg, #bada55, #7a9a15);
   color: #000;
   width: 100%;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer Footer renders correctly 1`] = `
+exports[`Calculator Calculator renders correctly 1`] = `
 Object {
   "debug": [Function],
   "findAllByAltText": [Function],

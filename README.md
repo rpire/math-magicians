@@ -9,7 +9,10 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rpire.github.io/math-magicians/)
+- [GitHub Pages](https://rpire.github.io/math-magicians/)
+- [Heroku](https://math-magicians-rpire.herokuapp.com/)
+- [Netlify](https://math-magicians-rpire.netlify.app/)
+
 
 ## Getting Started
 

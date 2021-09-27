@@ -42,5 +42,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://math-magicians-rpire.herokuapp.com/"
+  "homepage": "https://math-magicians-rpire.netlify.app/",
+  "devDependencies": {
+    "netlify-cli": "^6.9.17"
+  }
 }

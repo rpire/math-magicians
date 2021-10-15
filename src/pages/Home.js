@@ -18,7 +18,7 @@ const Home = () => (
       what you think you do.
     </p>
     <p>
-      The last page you will find is this site is the
+      The last page you will find in this site is the
       <strong> Quote </strong>
       page. Where you will find a quote from a famous math magician.
     </p>

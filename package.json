@@ -42,7 +42,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://rpire.github.io/math-magicians",
+  "homepage": "https://math-magicians-rpire.netlify.app",
   "devDependencies": {
     "netlify-cli": "^6.9.17"
   }
